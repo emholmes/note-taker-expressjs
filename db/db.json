@@ -4,6 +4,16 @@
       "title": "Take out trash",
       "text": "Landfill, recycling, and compost",
       "id": "0"
+    },
+    {
+      "title": "Clean kitchen",
+      "text": "Dishes, wipe counters, clean floors",
+      "id": "1"
+    },
+    {
+      "title": "Hire lawn care",
+      "text": "Mow, edge, weed the garden",
+      "id": "2"
     }
   ]
 }

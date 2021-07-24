@@ -15,12 +15,10 @@ app.use(express.static("public"));
 
 
 app.get("/api/notes", (req, res) => {
-  // let results = notes;
   res.json(notes);
 });
 
 const createNewNote = (body, notesArray) => {
-  // console.log(body);
   const note = body;
   notesArray.push(note);
   fs.writeFileSync(
@@ -54,22 +52,10 @@ const deleteNote = (noteObj, notesArray) => {
 
 // Delete note
 app.delete("/api/notes/:id", (req, res) => { 
-  // let noteId = req.params.id;
   const noteObj = findNoteById(req.params.id, notes);
-  console.log(noteObj);
   deleteNote(noteObj, notes);
   res.json(notes);
 });
-
-// app.get("/api/notes/:id", (req, res) => {
-//   const result = findNoteById(req.params.id, notes);
-//   if (result) {
-//     console.log(result);
-//     res.json(result);
-//   } else {
-//     res.send(404);
-//   }
-// });
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/index.html"));
@@ -82,9 +68,6 @@ app.get("/notes", (req, res) => {
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/index.html"));
 });
-
-
-
 
 app.listen(PORT, () => {
   console.log(`Server is now on port ${PORT}`);
