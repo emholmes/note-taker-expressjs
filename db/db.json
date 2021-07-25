@@ -3,17 +3,17 @@
     {
       "title": "Restock register items",
       "text": "- Item 1\n- Item 2\n- Item 3",
-      "id": "0"
+      "id": "0387ed9d-7d22-47c6-a735-c78fa196c1cf"
     },
     {
       "title": "Finish taxes",
       "text": "Due date: April 12",
-      "id": "1"
+      "id": "2dcb5a7c-f904-4f8e-94be-0acf8f11ee5f"
     },
     {
       "title": "Place order for inventory",
-      "text": "Items to reorder: \n- Item 1\n- Item 2\n- Item 3\n",
-      "id": "2"
+      "text": "Items to reorder: \n- Item 1\n- Item 2\n- Item 3",
+      "id": "4abf1b5a-5758-46d4-94ed-0c06febf9767"
     }
   ]
 }

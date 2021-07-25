@@ -5,6 +5,8 @@ const express = require("express");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+const {v4 : uuidv4} = require('uuid');
+
 const { notes } = require("./db/db.json"); 
 
 // parse incoming string or array data
@@ -30,7 +32,8 @@ const createNewNote = (body, notesArray) => {
 
 app.post("/api/notes", (req, res) => {
   // set id based on the next index of the array
-  req.body.id = notes.length.toString();
+  let uniqueId = uuidv4();
+  req.body.id = uniqueId;
   const note = createNewNote(req.body, notes);
   res.json(note);
 });

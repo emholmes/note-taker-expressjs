@@ -23,7 +23,7 @@ To install any necessary dependencies run the following command:
     npm install 
 
 ## Usage 
-If you want to clone this repo to your local machine, make sure you have node.js and npm installed (hint: `node -v` & `npm -v`). Once within the package, make sure you have express.js installed as well (to install express: `npm i express`). Deploy locally using `npm start`.
+If you want to clone this repo to your local machine, make sure you have node.js and npm installed (hint: `node -v` & `npm -v`). Once within the package, make sure you have express.js and UUID (sets unqiue ID for each note) installed as well (`npm i express` & `npm i uuid`). Deploy locally using `npm start`.
 
 ## Questions
 If you have any questions or feedback, create a new issue and add the label "question". 
