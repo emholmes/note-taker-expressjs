@@ -50,13 +50,14 @@ const deleteNote = (noteObj, notesArray) => {
   return notesArray;
 }
 
-// Delete note
+// Delete request
 app.delete("/api/notes/:id", (req, res) => { 
   const noteObj = findNoteById(req.params.id, notes);
   deleteNote(noteObj, notes);
   res.json(notes);
 });
 
+// HTML Routes
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/index.html"));
 });
